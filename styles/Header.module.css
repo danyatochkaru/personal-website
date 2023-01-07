@@ -1,0 +1,44 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-self: center;
+	justify-self: center;
+	width: 100%;
+	min-width: 240px;
+	max-width: 1200px;
+}
+
+.logo {
+	font-family: inherit;
+	user-select: none;
+	font-size: 20px;
+	font-weight: 600;
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 2px;
+}
+
+.dot {
+	height: 1em;
+	width: 1em;
+	background-color: #222;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.dot marquee {
+	transform: rotate(-8deg);
+	font-size: 16px;
+	line-height: 16px;
+	height: 100%;
+	width: 100%;
+	color: #f3f1ef;
+}
+
+.nav {
+	display: flex;
+	column-gap: 12px;
+}
