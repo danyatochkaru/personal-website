@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import Carousel from "../components/Carousel";
+import Description from "../components/Description";
 
 export default function Home() {
 	return (
@@ -11,6 +13,34 @@ export default function Home() {
 			</Head>
 			<main>
 				<Header />
+				<section className="content">
+					<Description />
+					<Carousel
+						items={[
+							{
+								id: 1,
+								title: "IKT54",
+								image:
+									"https://piybeep.com/static/media/ks54Page.d956d1f6947651ce7162.png",
+								description: "Lorem....",
+							},
+							{
+								id: 2,
+								title: "Hackaton",
+								image:
+									"https://piybeep.com/static/media/hacPage.c13d2a0458495997eb07.png",
+							},
+							{ id: 3, title: "MoscowCold", image: null },
+							{
+								id: 4,
+								title: "Loctravel",
+								image:
+									"https://piybeep.com/static/media/loctravelPage.d1f551ebf6c921740e72.png",
+							},
+						]}
+					/>
+				</section>
+				<footer>links</footer>
 			</main>
 		</>
 	);

@@ -1,3 +1,15 @@
+:root {
+	--swiper-theme-color: #8dafc0;
+}
+
+.swiper {
+	overflow: visible;
+}
+
+.swiper-pagination-bullet-active {
+	border: 2px solid #eee;
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -14,8 +26,41 @@ body {
 }
 
 main {
-	width: 100vw;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
+	row-gap: 10%;
+	padding: 60px 8%;
+}
+
+main > .content {
+	display: flex;
+	align-self: center;
+	column-gap: 20px;
+	width: 100%;
+	min-width: 240px;
+	max-width: 1200px;
+	flex: 1;
+}
+
+footer {
+	display: flex;
+	align-self: center;
+	width: 100%;
+	min-width: 240px;
+	max-width: 1200px;
+	user-select: none;
+}
+
+@media only screen and (max-width: 992px) {
+	.swiper {
+		overflow: hidden;
+		margin-left: 0;
+	}
+
+	main > .content {
+		flex-direction: column;
+		justify-content: space-around;
+	}
 }

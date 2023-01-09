@@ -1,11 +1,9 @@
-import { useRouter } from "next/router";
+import Link from "next/link";
 import { Button } from "antd";
 
 import styles from "../styles/Header.module.css";
 
 export default function Header() {
-	const router = useRouter();
-
 	return (
 		<header className={styles.header}>
 			<div className={styles.logo}>
@@ -16,11 +14,6 @@ export default function Header() {
 					</marquee>
 				</span>
 			</div>
-			<nav className={styles.nav}>
-				<Button type="link" onClick={() => router.push("/portfolio")}>
-					Порфтолио
-				</Button>
-			</nav>
 		</header>
 	);
 }

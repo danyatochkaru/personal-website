@@ -1,0 +1,65 @@
+.carousel {
+	width: 100%;
+	min-width: 120px;
+	max-width: 600px;
+}
+
+.card {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.51);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.2px);
+	-webkit-backdrop-filter: blur(5.2px);
+	border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.card_preview_image {
+	overflow: hidden;
+	border-radius: 16px;
+}
+
+.card_preview_image img {
+	transition: 0.3s;
+	width: 100%;
+	object-fit: cover;
+}
+
+.card_content {
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+}
+
+.card_title {
+	font-weight: 600;
+	font-size: 18px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.card_description {
+	color: rgba(0, 0, 0, 0.45);
+}
+
+.card_btn_more {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.51);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.2px);
+	-webkit-backdrop-filter: blur(5.2px);
+	border: 1px solid rgba(255, 255, 255, 1);
+
+	color: #222;
+	transition: 0.3s;
+	padding: 12px;
+	cursor: pointer;
+}
+
+.card_btn_more:hover {
+	color: #000;
+	background: white;
+}
