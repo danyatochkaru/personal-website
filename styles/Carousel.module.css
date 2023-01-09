@@ -63,3 +63,10 @@
 	color: #000;
 	background: white;
 }
+
+@media only screen and (max-width: 992px) {
+	.card,
+	.card_btn_more {
+		box-shadow: none;
+	}
+}
