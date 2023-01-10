@@ -48,11 +48,11 @@
 	width: 100%;
 	background: rgba(255, 255, 255, 0.51);
 	border-radius: 16px;
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5.2px);
 	-webkit-backdrop-filter: blur(5.2px);
 	border: 1px solid rgba(255, 255, 255, 1);
 
+	font-size: 16px;
 	color: #222;
 	transition: 0.3s;
 	padding: 12px;
@@ -65,8 +65,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-	.card,
-	.card_btn_more {
+	.card {
 		box-shadow: none;
 	}
 }

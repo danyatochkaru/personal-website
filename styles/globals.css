@@ -35,13 +35,13 @@ main {
 }
 
 main > .content {
-	padding: 40px 0;
+	padding: 60px 0;
 	display: flex;
 	align-self: center;
 	column-gap: 20px;
 	width: 100%;
 	min-width: 240px;
-	max-width: 1200px;
+	max-width: 1400px;
 	flex: 1;
 }
 
@@ -50,7 +50,7 @@ footer {
 	align-self: center;
 	width: 100%;
 	min-width: 240px;
-	max-width: 1200px;
+	max-width: 1400px;
 	user-select: none;
 }
 

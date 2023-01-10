@@ -2,12 +2,13 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Carousel from "../components/Carousel";
 import Description from "../components/Description";
+import Footer from "../components/Footer";
 
 export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>{"danyatochkaru's showcase"}</title>
+				<title>{"danyatochkaru's website"}</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.svg" />
 			</Head>
@@ -30,17 +31,24 @@ export default function Home() {
 								image:
 									"https://piybeep.com/static/media/hacPage.c13d2a0458495997eb07.png",
 							},
-							{ id: 3, title: "MoscowCold", image: null },
-							{
-								id: 4,
-								title: "Loctravel",
-								image:
-									"https://piybeep.com/static/media/loctravelPage.d1f551ebf6c921740e72.png",
-							},
+							// {
+							// 	id: 3,
+							// 	title: "MoscowCold",
+							// 	image: null,
+							// 	description:
+							// 		"Данный сайт является интернет-магазином кондеционеров.",
+							// },
+							// {
+							// 	id: 4,
+							// 	title: "Loctravel",
+							// 	image:
+							// 		"https://piybeep.com/static/media/loctravelPage.d1f551ebf6c921740e72.png",
+							// },
 						]}
 					/>
 				</section>
-				<footer>links</footer>
+				<Footer />
+				{/* <footer>links</footer> */}
 			</main>
 		</>
 	);

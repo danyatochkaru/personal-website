@@ -1,0 +1,23 @@
+.footer nav {
+	font-weight: 500;
+	width: fit-content;
+	display: flex;
+	column-gap: 8px;
+}
+
+.footer a {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.footer a:hover {
+	color: #444;
+}
+
+.footer_icon {
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	border-radius: 4px;
+	margin-right: 4px;
+}

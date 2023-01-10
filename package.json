@@ -1,5 +1,7 @@
 {
-  "name": "showcase",
+  "name": "personal-website",
+  "author": "danyatochkaru",
+  "homepage": "https://danyatochka.ru",
   "version": "0.1.0",
   "private": false,
   "scripts": {
@@ -9,9 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.8.0",
     "@next/font": "13.1.1",
-    "antd": "^5.1.2",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "next": "13.1.1",

@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { Button } from "antd";
-
 import styles from "../styles/Header.module.css";
 
 export default function Header() {

@@ -1,10 +1,8 @@
 import Image from "next/image";
-import { Button, Card } from "antd";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper";
 
 import styles from "../styles/Carousel.module.css";
-import { EyeFilled } from "@ant-design/icons";
 
 export default function Carousel({ items = [] }) {
 	return (
@@ -15,6 +13,7 @@ export default function Carousel({ items = [] }) {
 			direction={"vertical"}
 			spaceBetween={60}
 			slidesPerView={"auto"}
+			speed={400}
 			watchOverflow
 			grabCursor
 			pagination={{ clickable: true, dynamicBullets: true }}
@@ -45,24 +44,6 @@ export default function Carousel({ items = [] }) {
 						</div>
 						<button className={styles.card_btn_more}>Подробнее</button>
 					</div>
-					{/* <Card
-						// title={i.title}
-						cover={
-							<Image
-								alt={i.title}
-								src={
-									i?.image ??
-									"https://petrotechnology.ru/sites/default/files/goods_images/noimg_7.png"
-								}
-								width={400}
-								height={400}
-							/>
-						}
-						bordered={false}
-						actions={[<span key="showmore">Подробнее</span>]}
-					>
-						<Card.Meta title={i.title} description="This is the description" />
-					</Card> */}
 				</SwiperSlide>
 			))}
 		</Swiper>
